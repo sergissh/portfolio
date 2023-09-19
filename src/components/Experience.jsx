@@ -97,7 +97,6 @@ const ExperienceWrapper = styled.section`
                 flex-wrap: wrap;
                 li{
                     border-radius: 1rem;
-                    background: green;
                     padding: .4rem;
                     font-size: .9rem;
                     background-color: rgb(32, 141, 108, .7);
