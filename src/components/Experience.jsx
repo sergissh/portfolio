@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import Separator from './Separator'
 function Experience() {
   return (
-    <ExperienceWrapper>
+    <ExperienceWrapper id='experience'>
         <Separator />
+        <h2 className='section-title'>Experience</h2>
         <ol className='exp-list'>
             <li className='exp-list__item'>
                 <div className='item'>
@@ -23,10 +24,9 @@ function Experience() {
                         knowledge shares, and mentorship.
                         </p>
                         <ul>
+                            <li>Microsoft Dynamics 365</li>
+                            <li>C#</li>
                             <li>Javascript</li>
-                            <li>ReactJS</li>
-                            <li>CSS3</li>
-                            <li>HTML5</li>
                         </ul>
                     </div>
                 </div>
@@ -48,12 +48,9 @@ function Experience() {
                             knowledge shares, and mentorship.
                         </p>
                         <ul>
-                            <li>Javascript</li>
-                            <li>ReactJS</li>
-                            <li>CSS3</li>
-                            <li>HTML5</li>
-                            <li>Python</li>
-                            <li>C++</li>
+                            <li>Scala</li>
+                            <li>Spark</li>
+                            <li>Quantexa Tool</li>
                         </ul>
                     </div>
                 </div>
@@ -66,21 +63,25 @@ function Experience() {
 export default Experience
 
 const ExperienceWrapper = styled.section`
-    
+    .section-title{
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
     .exp-list__item{
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .item{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         max-width: 100%;
+        gap: .8rem;
         .item-header{
-            width: 32%;
+            width: 100%;
             font-size: .85rem;
             opacity: .75;
         }
         .item-content{
-            width: 68%;
+            width: 100%;
             h4{
                 margin-bottom: 1rem;
             }
@@ -102,6 +103,16 @@ const ExperienceWrapper = styled.section`
                     background-color: rgb(32, 141, 108, .7);
                     color: rgb(66, 229, 180, 1);
                 }
+            }
+        }
+        @media(min-width: 623px){
+            flex-direction: row;
+            gap: 0;
+            .item-header{
+                width: 32%;
+            }
+            .item-content{
+                width: 68%;
             }
         }
     }

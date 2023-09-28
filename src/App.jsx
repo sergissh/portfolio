@@ -46,4 +46,11 @@ const MainWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 0 6rem;
+  @media(max-width: 1025px){
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3rem;
+  }
 `

@@ -1,9 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ProjectTemplate from './components/Projects/ProjectTemplate.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
-      <App />
+      <Routes>
+        <Route path='/' element={<App />} >
+          <Route path='projects' element={<ProjectTemplate/>} />
+        </Route>
+      </Routes>
     </BrowserRouter>
 )

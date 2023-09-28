@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 function About() {
   return (
-    <AboutWrapper>
-      
+    <AboutWrapper id='about'>
+      <h2 className='section-title'>About Me</h2>
       <p>
       Back in 2012, I decided to try my hand at creating custom Tumblr 
       themes and tumbled head first into the rabbit hole of coding and web 
@@ -34,5 +34,9 @@ const AboutWrapper = styled.section`
         margin-bottom: 1rem;
         line-height: 1.5;
         color: rgb(148 163 184/1);
+    }
+    .section-title{
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
     }
 `

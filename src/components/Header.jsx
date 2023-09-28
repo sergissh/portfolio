@@ -10,10 +10,12 @@ function Header() {
     const [activeLink, setActiveLink] = useState(0);
 
     
-    const handleLinkClick = (index) => {
+    const handleLinkClick = index => {
         setActiveLink(index);
     };
+    const getApi = () => {
 
+    }
     const renderLinks = () => {
         return (
             <ul>
@@ -21,7 +23,7 @@ function Header() {
                 links.map((link, index) => {
                     return (
                         <li key={index} onClick={() => handleLinkClick(index)}>
-                            <a className={index === activeLink ? 'll-anchor ll-active' : 'll-anchor'} href='#'>
+                            <a className={index === activeLink ? 'll-anchor ll-active' : 'll-anchor'} href={`#${link.toLowerCase()}`}>
                                 <span className='ll-a__bar'></span>
                                 <span className='ll-a__name'>{link}</span>
                             </a>
@@ -37,17 +39,20 @@ function Header() {
             <div className='upper-header'>
                 <h1><Link to="#">Sergi Sanchez</Link></h1>
                 <h3>Computer Engineer</h3>
-                <p>This is my personal portfolio where you can check my CV data and check my projects out!</p>
+                <p>
+                    This is my personal portfolio where you can check information 
+                    related to my resume, personal projects and get to know me 
+                    a little more!
+                </p>
                 <nav>
                     {renderLinks()}
                 </nav>
             </div>
             
             <div className='lower-header'>
-                <Link to="#"><GitHub /></Link>
-                <Link to="#"><Linkedin /></Link>
-                <Link to="#"><Instagram /></Link>
-                <Link to="#"><Twitter /></Link>
+                <a target='_blank' href='https://github.com/sergissh' rel="noreferrer"><GitHub /></a>
+                <a target='_blank' href="https://www.linkedin.com/in/sergi-s%C3%A1nchez-hern%C3%A1ndez/" rel="noreferrer"><Linkedin /></a>
+                <a target='_blank' href="https://www.instagram.com/sergisanchezz_/" rel="noreferrer"><Instagram /></a>
             </div>
         </HeaderWrapper>
     )
@@ -59,12 +64,7 @@ const HeaderWrapper = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 100vh;
-    min-height: 100vh;
-    padding: 6rem 0;
-    width: 50%;
-    position: sticky;
-    top: 0;
+    padding: 4rem 0;
     .upper-header{
         h1{
         line-height: 1.45;
@@ -74,11 +74,13 @@ const HeaderWrapper = styled.header`
         }
         p{
             font-size: 1rem;
-            margin-top: 2rem;
+            margin-top: 1.6rem;
             max-width: 22rem;
+            opacity: .75;
         }
     }
     nav{
+        display: none;
         ul{
             margin-top: 3rem;
             display: block;
@@ -119,8 +121,19 @@ const HeaderWrapper = styled.header`
             }
         }
     }
-
+    @media(min-width: 1025px){
+        max-height: 100vh;
+        min-height: 100vh;
+        width: 50%;
+        position: sticky;
+        top: 0;
+        padding: 6rem 0;
+        nav{
+            display: block;
+        }
+    }
     .lower-header{
+        margin-top: 2rem;
         display: flex;
         gap: 1.2rem;
         svg{

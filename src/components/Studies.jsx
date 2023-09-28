@@ -4,9 +4,38 @@ import Separator from './Separator'
 import { RightArrow } from '../assets/Icons'
 
 function Studies() {
+
+    const obtainCV = (event) => {
+        event.preventDefault()
+        fetch('https://portfolio-backend-4z0r.onrender.com/curriculum-vitae', 
+        {
+            method: "GET",
+            mode: "cors"
+        })
+        .then((response) => {
+            if (!response.ok)
+                throw new Error('Network response was not ok')
+            return response.blob()
+        })
+        .then(blob => {
+            console.log(blob);
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'CV-Sergi-Sanchez-Hernandez.pdf'; // Specify the desired file name
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+        })
+        .catch(error => {
+            console.log("Error: ", error);
+        })
+    }
   return (
-    <StudiesWrapper>
+    <StudiesWrapper id='studies'>
         <Separator/>
+        <h2 className='section-title'>Studies</h2>
         <ol>
             <li className='studies-item'>
                 <div>
@@ -24,7 +53,7 @@ function Studies() {
             </li>
         </ol>
         <div className='resume'>
-            <a href='#'>
+            <a href='#' onClick={obtainCV}>
                 <span>View Full Resumé</span>
                 <RightArrow />
             </a>
@@ -37,6 +66,10 @@ export default Studies
 
 const StudiesWrapper = styled.section`
     width: 100%;
+    .section-title{
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
     .studies-item{
         margin-top: 2.5rem;
         div{

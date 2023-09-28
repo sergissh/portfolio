@@ -4,6 +4,7 @@ import About from './About';
 import Experience from './Experience';
 import Studies from './Studies';
 import ProjectList from './ProjectList';
+import HardSkills from './HardSkills';
 
 function MainSection() {
   return (
@@ -19,6 +20,11 @@ function MainSection() {
 export default MainSection;
 
 const SectionWrapper = styled.main`
+  @media(min-width: 1025px){
     padding: 6rem 0;
     width: 50%;
+    .section-title{
+      display: none;
+    }
+  }
 `
