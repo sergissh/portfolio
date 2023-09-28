@@ -38,20 +38,23 @@ function ProjectList() {
                 <a target='_blank' href='https://github.com/sergissh/TFG' rel="noreferrer">
                     <div className='pr-item__div'>
                         <div className='pr-item__img'>
-                            <img src='https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg'/>
+                            <img src='../../images/web-scraping.jpg'/>
                         </div>
                         <div className='pr-item__content'>
                             <div className='prc-title'>
-                                <h4>Dark Mode Theme</h4>
+                                <h4>Basic - Web Scraping</h4>
                                 <TopRightArrow />
                             </div>
-                            <p>Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
+                            <p>
+                                This project marks the inception of my journey into the world
+                                of Web Scraping. It signifies my initial foray into developing a 
+                                crawler and scraper bot, aimed at extracting valuable data from
+                                <i>La Casa del Libro</i> website.
+                            </p>
                             <ul className='prc-tags'>
-                                <li>Spotify API</li>
-                                <li>API Rest</li>
-                                <li>Netlify</li>
-                                <li>Styled-Components</li>
-                                <li>ReactJS</li>
+                                <li>Python</li>
+                                <li>BeautifulSoup</li>
+                                <li>Selenium</li>
                             </ul>
                         </div>
                     </div>
@@ -121,10 +124,11 @@ const WrapperList = styled.section`
                 display: flex;
                 flex-direction: column;
                 gap: .4rem;
+                flex-wrap: nowrap;
                 .prc-title{
                     display: flex;
-
                     gap: .6rem;
+                    align-items: center;
                     svg{
                         fill: white;
                         width: .85rem;
