@@ -92,7 +92,8 @@ const StudiesWrapper = styled.section`
         a{
             display: flex;
             justify-content: flex-start;
-            align-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
             gap: .4rem;
             span{
                 font-size: 1rem;
