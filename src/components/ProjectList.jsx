@@ -13,7 +13,7 @@ function ProjectList() {
                 <a target='_blank' href='https://github.com/sergissh/TFG' rel="noreferrer">
                     <div className='pr-item__div'>
                         <div className='pr-item__img'>
-                            <img src='../assets/images/Generative-Adversarial-Networks.png'/>
+                            <img src='/src/assets/images/Generative-Adversarial-Networks.png'/>
                         </div>
                         <div className='pr-item__content'>
                             <div className='prc-title'>
