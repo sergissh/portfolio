@@ -35,7 +35,7 @@ function ProjectList() {
                 </a>
             </li>
             <li className='pr-item'>
-                <a target='_blank' href='https://github.com/sergissh/TFG' rel="noreferrer">
+                <a target='_blank' href='https://github.com/sergissh/Basic-Web-Scraper' rel="noreferrer">
                     <div className='pr-item__div'>
                         <div className='pr-item__img'>
                             <img src='../../images/web-scraping.jpg'/>
@@ -49,7 +49,7 @@ function ProjectList() {
                                 This project marks the inception of my journey into the world
                                 of Web Scraping. It signifies my initial foray into developing a 
                                 crawler and scraper bot, aimed at extracting valuable data from
-                                <i>La Casa del Libro</i> website.
+                                <i> La Casa del Libro</i> website.
                             </p>
                             <ul className='prc-tags'>
                                 <li>Python</li>
