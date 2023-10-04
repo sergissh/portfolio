@@ -4,7 +4,6 @@ import About from './About';
 import Experience from './Experience';
 import Studies from './Studies';
 import ProjectList from './ProjectList';
-import HardSkills from './HardSkills';
 
 function MainSection() {
   return (

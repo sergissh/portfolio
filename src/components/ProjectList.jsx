@@ -61,24 +61,20 @@ function ProjectList() {
                 </a>
             </li>
             <li className='pr-item'>
-                <a target='_blank' href='https://github.com/sergissh/TFG' rel="noreferrer">
+                <a href='#' rel="noreferrer">
                     <div className='pr-item__div'>
                         <div className='pr-item__img'>
                             <img src='https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg'/>
                         </div>
                         <div className='pr-item__content'>
                             <div className='prc-title'>
-                                <h4>Dark Mode Theme</h4>
-                                <TopRightArrow />
+                                <h4>🚧 Working on Uploading Projects 🚧</h4>
                             </div>
-                            <p>Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
-                            <ul className='prc-tags'>
-                                <li>Spotify API</li>
-                                <li>API Rest</li>
-                                <li>Netlify</li>
-                                <li>Styled-Components</li>
-                                <li>ReactJS</li>
-                            </ul>
+                            <p>
+                             I'm working on uploading more projects to the Web. I have projects that 
+                             I have doveloped during my degree or just for fun, but before uploading them 
+                             I want to review and document them to turn them into an interesting product.
+                             </p>
                         </div>
                     </div>
                 </a>
