@@ -73,7 +73,7 @@ function ProjectList() {
                             <p>
                              I'm working on uploading more projects to the Web. I have projects that 
                              I have doveloped during my degree or just for fun, but before uploading them 
-                             I want to review and document them to turn them into an interesting product.
+                             I want to review and document them to turn them into an interesting piece of content.
                              </p>
                         </div>
                     </div>

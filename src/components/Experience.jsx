@@ -15,30 +15,6 @@ function Experience() {
                     <div className='item-content'>
                         <h4>Internship · Accenture</h4>
                         <p>
-                        Deliver high-quality, robust production code for a 
-                        diverse array of projects for clients including 
-                        Harvard Business School, Everytown for Gun Safety, 
-                        Pratt Institute, Koala Health, Vanderbilt University, 
-                        The 19th News, and more. Provide leadership within 
-                        engineering department through close collaboration, 
-                        knowledge shares, and mentorship.
-                        </p>
-                        <ul>
-                            <li>Microsoft Dynamics 365</li>
-                            <li>C#</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li className='exp-list__item'>
-                <div className='item'>
-                    <header className='item-header'>
-                        OCT 2021 — DEC 2022
-                    </header>
-                    <div className='item-content'>
-                        <h4>Internship · NTTDATA</h4>
-                        <p>
                             Deliver high-quality, robust production code for a 
                             diverse array of projects for clients including 
                             Harvard Business School, Everytown for Gun Safety, 
@@ -51,6 +27,27 @@ function Experience() {
                             <li>Scala</li>
                             <li>Spark</li>
                             <li>Quantexa Tool</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li className='exp-list__item'>
+                <div className='item'>
+                    <header className='item-header'>
+                        OCT 2021 — DEC 2022
+                    </header>
+                    <div className='item-content'>
+                        <h4>Internship · NTTDATA</h4>
+                        <p>
+                            Managed an end-to-end CRM project in Microsoft Dynamics 365, employing Scrum and Kanban methods for effective teamwork. 
+                            Developed custom plugins using C#, .NET, and enhanced user interface with JavaScript. Responsibilities spanned project 
+                            creation, maintenance, and plugin programming. Engaged in sprint planning, ensuring project alignment, and facilitated knowledge sharing.
+                        </p>
+                        <ul>
+                            <li>Microsoft Dynamics 365</li>
+                            <li>C#</li>
+                            <li>Javascript</li>
+                            <li>.NET</li>
                         </ul>
                     </div>
                 </div>
@@ -110,6 +107,7 @@ const ExperienceWrapper = styled.section`
             gap: 0;
             .item-header{
                 width: 32%;
+                padding-top: .15rem;
             }
             .item-content{
                 width: 68%;
