@@ -15,18 +15,16 @@ function Experience() {
                     <div className='item-content'>
                         <h4>Internship · Accenture</h4>
                         <p>
-                            Deliver high-quality, robust production code for a 
-                            diverse array of projects for clients including 
-                            Harvard Business School, Everytown for Gun Safety, 
-                            Pratt Institute, Koala Health, Vanderbilt University, 
-                            The 19th News, and more. Provide leadership within 
-                            engineering department through close collaboration, 
-                            knowledge shares, and mentorship.
+                        I enrolled in the Quantexa Data Engineer Academy certification program, where I honed my skills in developing projects 
+                        aimed at detecting financial fraud using the Quantexa platform for Data Engineering. 
+                        I gained valuable experience in working with declarative languages like Spark and Scala, in addition to mastering 
+                        the intricacies of the platform's internal code. Due to the limitation of the internship, I was not able to finish
+                        the course, even though I almost finished.
                         </p>
                         <ul>
                             <li>Scala</li>
                             <li>Spark</li>
-                            <li>Quantexa Tool</li>
+                            <li>Quantexa Platform</li>
                         </ul>
                     </div>
                 </div>
@@ -40,8 +38,8 @@ function Experience() {
                         <h4>Internship · NTTDATA</h4>
                         <p>
                             Managed an end-to-end CRM project in Microsoft Dynamics 365, employing Scrum and Kanban methods for effective teamwork. 
-                            Developed custom plugins using C#, .NET, and enhanced user interface with JavaScript. Responsibilities spanned project 
-                            creation, maintenance, and plugin programming. Engaged in sprint planning, ensuring project alignment, and facilitated knowledge sharing.
+                            Developed custom plugins using C#, .NET, and enhanced user interface with JavaScript. Responsibilities spanned new features development, 
+                            project maintenance, and plugin programming. Engaged in sprint planning, ensuring project alignment, and facilitated knowledge sharing.
                         </p>
                         <ul>
                             <li>Microsoft Dynamics 365</li>
