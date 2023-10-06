@@ -5,22 +5,27 @@ function About() {
     <AboutWrapper id='about'>
       <h2 className='section-title'>About Me</h2>
       <p>
-      Back in 2012, I decided to try my hand at creating custom Tumblr 
-      themes and tumbled head first into the rabbit hole of coding and web 
-      development. Fast-forward to today, and I’ve had the privilege of 
-      building software for an advertising agency, a start-up, a 
-      student-led design studio, and a huge corporation.
+        Ever since childhood, I always had the curiosity and desire to learn new things,
+        leading me to be fascinated by science and mathematics. Initially aspiring to pursue 
+        a degree in Physics at university, I encountered obstacles on that path. 
+        However, I quickly pivoted towards the field of Computer Engineering, discovering a 
+        captivating new world to explore.
       </p>
       <p>
-      My main focus these days is building products and leading projects
-        for our clients at Upstatement. In my free time I've also released 
-        an online video course that covers everything you need to know to 
-        build a web app with the Spotify API.
+        I found great enjoyment in programming, which led me to choose a specialization in computing.
+        Along this path, I uncovered field such as Artificial Intelligence and Computer Vision, 
+        these being the ones on which I aspire to concentrate my career and grow professionally.
       </p>
       <p>
-      When I’m not at the computer, 
-      I’m usually rock climbing, hanging out with my wife and two cats, 
-      or running around Hyrule searching for Korok seeds.
+        In addition to learning about Artificial Intelligence, I have keen interest in delving into another domains 
+        such as web development. This allows me to create visually and appealing content for a wider audience, much
+        like this portfolio you're currently viewing.
+      </p>
+      <p>
+          Along with my pursuit of learning and engaging in self-directed projects, I love to play
+          both individual and team sports. I also relish spending time with my girlfriend and friends,
+          and whenever the opportunity arises, to explore new countries and inmerse myself in diverse cultures
+          through travel. 
       </p>
     </AboutWrapper>
   )
