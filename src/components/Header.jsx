@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react'
-import { GitHub, Instagram, Linkedin, Twitter } from '../assets/Icons'
+import { GitHub, Linkedin} from '../assets/Icons'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 
@@ -51,7 +51,6 @@ function Header() {
             <div className='lower-header'>
                 <a target='_blank' href='https://github.com/sergissh' rel="noreferrer"><GitHub /></a>
                 <a target='_blank' href="https://www.linkedin.com/in/sergi-s%C3%A1nchez-hern%C3%A1ndez/" rel="noreferrer"><Linkedin /></a>
-                <a target='_blank' href="https://www.instagram.com/sergisanchezz_/" rel="noreferrer"><Instagram /></a>
             </div>
         </HeaderWrapper>
     )
