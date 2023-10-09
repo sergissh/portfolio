@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import { GitHub, Instagram, Linkedin, Twitter } from '../assets/Icons'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components';
@@ -8,14 +8,13 @@ function Header() {
     const links = ['ABOUT', 'EXPERIENCE', 'STUDIES', 'PROJECTS'];
 
     const [activeLink, setActiveLink] = useState(0);
-
+    
+    
     
     const handleLinkClick = index => {
-        setActiveLink(index);
+        setActiveLink(index);       
     };
-    const getApi = () => {
 
-    }
     const renderLinks = () => {
         return (
             <ul>
