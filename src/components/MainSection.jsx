@@ -19,8 +19,10 @@ function MainSection() {
 export default MainSection;
 
 const SectionWrapper = styled.main`
+  margin-bottom: 5rem;
   @media(min-width: 1025px){
     padding: 6rem 0;
+    margin-bottom: 0;
     width: 50%;
     .section-title{
       display: none;
