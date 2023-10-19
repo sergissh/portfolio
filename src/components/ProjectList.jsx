@@ -69,6 +69,7 @@ function ProjectList() {
                         <div className='pr-item__content'>
                             <div className='prc-title'>
                                 <h4>Snake | Python & PyGame</h4>
+                                <TopRightArrow />
                             </div>
                             <p>
                             In this project I develop my first game with Python, the iconic Snake game. 
