@@ -61,6 +61,28 @@ function ProjectList() {
                 </a>
             </li>
             <li className='pr-item'>
+                <a target='_blank' href='https://github.com/sergissh/Snake---PyGame' rel="noreferrer">
+                    <div className='pr-item__div'>
+                        <div className='pr-item__img'>
+                            <img src='../../images/snake-pygame.jpg'/>
+                        </div>
+                        <div className='pr-item__content'>
+                            <div className='prc-title'>
+                                <h4>Snake | Python & PyGame</h4>
+                            </div>
+                            <p>
+                            In this project I develop my first game with Python, the iconic Snake game. 
+                            For this I use the PyGame library that allows the creation of 2D video games in a simple way.
+                            </p>
+                            <ul className='prc-tags'>
+                                <li>Python</li>
+                                <li>PyGame</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li className='pr-item'>
                 <a href='#' rel="noreferrer">
                     <div className='pr-item__div'>
                         <div className='pr-item__img'>
@@ -74,12 +96,11 @@ function ProjectList() {
                              I'm working on uploading more projects to the Web. I have projects that 
                              I have doveloped during my degree or just for fun, but before uploading them 
                              I want to review and document them to turn them into an interesting piece of content.
-                             </p>
+                            </p>
                         </div>
                     </div>
                 </a>
             </li>
-            
         </ol>
 
     </WrapperList>
