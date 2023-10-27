@@ -26,9 +26,10 @@ function ProjectList() {
                                 MNIST and CelebA datasets.
                             </p>
                             <ul className='prc-tags'>
-                                <li>PyTorch</li>
-                                <li>Matplotlib</li>
-                                <li>Jupyter Notebook</li>
+                                <li>PythonS</li>
+                                <li>Py-PyTorch</li>
+                                <li>Py-Matplotlib</li>
+                                <li>Py-Jupyter Notebook</li>
                             </ul>
                         </div>
                     </div>
@@ -53,8 +54,8 @@ function ProjectList() {
                             </p>
                             <ul className='prc-tags'>
                                 <li>Python</li>
-                                <li>BeautifulSoup</li>
-                                <li>Selenium</li>
+                                <li>Py-BeautifulSoup</li>
+                                <li>Py-Selenium</li>
                             </ul>
                         </div>
                     </div>
@@ -77,7 +78,31 @@ function ProjectList() {
                             </p>
                             <ul className='prc-tags'>
                                 <li>Python</li>
-                                <li>PyGame</li>
+                                <li>Py-PyGame</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li className='pr-item'>
+                <a target='_blank' href='https://github.com/sergissh/Search-Algorithms-with-Tkinter' rel="noreferrer">
+                    <div className='pr-item__div'>
+                        <div className='pr-item__img'>
+                            <img src='../../images/main-window.png'/>
+                        </div>
+                        <div className='pr-item__content'>
+                            <div className='prc-title'>
+                                <h4>Search Algorithms with Tkinter</h4>
+                                <TopRightArrow />
+                            </div>
+                            <p>
+                            
+                            </p>
+                            <ul className='prc-tags'>
+                                <li>Python</li>
+                                <li>Py-Tkinter</li>
+                                <li>Py-Matplotlib</li>
+                                <li>Py-Networkx</li>
                             </ul>
                         </div>
                     </div>
