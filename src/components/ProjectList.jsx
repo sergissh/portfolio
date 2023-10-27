@@ -92,11 +92,14 @@ function ProjectList() {
                         </div>
                         <div className='pr-item__content'>
                             <div className='prc-title'>
-                                <h4>Search Algorithms with Tkinter</h4>
+                                <h4>⚙ Search Algorithms with Tkinter ⚙</h4>
                                 <TopRightArrow />
                             </div>
-                            <p>
-                            
+                            <p> 
+                                How can you create a desktop application using Python? How do you generate and present 
+                                graphs within this application? What is the underlying logic for implementing search algorithms? 
+                                This <b>ongoing project</b> endeavors to address these inquiries by developing a desktop application with
+                                Python's Tkinter library.
                             </p>
                             <ul className='prc-tags'>
                                 <li>Python</li>
