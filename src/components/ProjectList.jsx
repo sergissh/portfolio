@@ -26,7 +26,7 @@ function ProjectList() {
                                 MNIST and CelebA datasets.
                             </p>
                             <ul className='prc-tags'>
-                                <li>PythonS</li>
+                                <li>Python</li>
                                 <li>Py-PyTorch</li>
                                 <li>Py-Matplotlib</li>
                                 <li>Py-Jupyter Notebook</li>
