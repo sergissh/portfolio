@@ -7,24 +7,54 @@ function Experience() {
         <Separator />
         <h2 className='section-title'>Experience</h2>
         <ol className='exp-list'>
-            <li className='exp-list__item'>
+             <li className='exp-list__item'>
+                <div className='item'>
+                    <header className='item-header'>
+                        FEB 2024 — OCT 2026
+                    </header>
+                    <div className='item-content'>
+                        <h4>AI Engineer <span>· IREC</span></h4>
+                        <p>
+                            Developed AI and machine learning solutions for smart energy
+                             systems within European research and innovation projects. 
+                             My work covered the complete machine learning pipeline, 
+                             including data acquisition, preprocessing, feature engineering,
+                              model development, evaluation and visualization. 
+                              I contributed to projects on photovoltaic and demand 
+                              forecasting, non-intrusive load monitoring (NILM) and 
+                              building flexibility aggregation, with part of this work 
+                              resulting in a peer-reviewed scientific publication and 
+                              presentation at an international conference.
+                        </p>
+                        <ul>
+                            <li>Python</li>
+                            <li>PyTorch</li>
+                            <li>Scikit-learn</li>
+                            <li>TensorFlow</li>
+                            <li>Git</li>
+                            <li>Docker</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li className='exp-list__item' id='first-item'>
                 <div className='item'>
                     <header className='item-header'>
                         MAY 2023 — SEP 2023
                     </header>
                     <div className='item-content'>
-                        <h4>Internship · Accenture</h4>
+                        <h4>Data Analyst Intern <span>· Accenture</span></h4>
                         <p>
-                        I enrolled in the Quantexa Data Engineer Academy certification program, where I honed my skills in developing projects 
-                        aimed at detecting financial fraud using the Quantexa platform for Data Engineering. 
-                        I gained valuable experience in working with declarative languages like Spark and Scala, in addition to mastering 
-                        the intricacies of the platform's internal code. Due to the limitation of the internship, I was not able to finish
-                        the course, even though I almost finished.
+                            Contributed to an insurance and banking analytics project on the 
+                            Quantexa platform, developing data processing pipelines with 
+                            Scala and Apache Spark.
                         </p>
                         <ul>
                             <li>Scala</li>
                             <li>Spark</li>
-                            <li>Quantexa Platform</li>
+                            <li>SQL</li>
+                            <li>Git</li>
                         </ul>
                     </div>
                 </div>
@@ -35,11 +65,11 @@ function Experience() {
                         OCT 2021 — DEC 2022
                     </header>
                     <div className='item-content'>
-                        <h4>Internship · NTTDATA</h4>
+                        <h4>Software Developer Intern <span>· NTTDATA</span></h4>
                         <p>
-                            Managed an end-to-end CRM project in Microsoft Dynamics 365, employing Scrum and Kanban methods for effective teamwork. 
-                            Developed custom plugins using C#, .NET, and enhanced user interface with JavaScript. Responsibilities spanned new features development, 
-                            project maintenance, and plugin programming. Engaged in sprint planning, ensuring project alignment, and facilitated knowledge sharing.
+                            Contributed to the development of an end-to-end CRM solution using
+                            Microsoft Dynamics 365, developing backend features in C#/.NET and
+                            frontend components with JavaScript.
                         </p>
                         <ul>
                             <li>Microsoft Dynamics 365</li>
@@ -59,11 +89,13 @@ export default Experience
 
 const ExperienceWrapper = styled.section`
     .section-title{
-      margin-bottom: 1rem;
       font-size: 1.2rem;
     }
     .exp-list__item{
         margin-top: 3rem;
+    }
+    #first-item{
+        margin-top: 2rem;
     }
     .item{
         display: flex;
@@ -73,15 +105,22 @@ const ExperienceWrapper = styled.section`
         .item-header{
             width: 100%;
             font-size: .85rem;
-            opacity: .75;
+            color: #94a3b8;
+            font-weight: 500;
         }
         .item-content{
             width: 100%;
             h4{
                 margin-bottom: 1rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+            h4 span{
+                color:#94a3b8;
+                font-weight:500;
             }
             p{
-                line-height: 1.4rem;
+                line-height: 1.6;
                 opacity: .75;
                 min-width: 100%;
             }
@@ -104,7 +143,7 @@ const ExperienceWrapper = styled.section`
             flex-direction: row;
             gap: 0;
             .item-header{
-                width: 32%;
+                width: 25%;
                 padding-top: .15rem;
             }
             .item-content{

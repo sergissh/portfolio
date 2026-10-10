@@ -5,33 +5,6 @@ import { RightArrow } from '../assets/Icons'
 
 function Studies() {
 
-    const obtainCV = (event) => {
-        event.preventDefault()
-        fetch('https://portfolio-backend-4z0r.onrender.com/curriculum-vitae', 
-        {
-            method: "GET",
-            mode: "cors"
-        })
-        .then((response) => {
-            if (!response.ok)
-                throw new Error('Network response was not ok')
-            return response.blob()
-        })
-        .then(blob => {
-            console.log(blob);
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.style.display = 'none';
-            a.href = url;
-            a.download = 'CV-Sergi-Sanchez-Hernandez.pdf'; // Specify the desired file name
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-        })
-        .catch(error => {
-            console.log("Error: ", error);
-        })
-    }
   return (
     <StudiesWrapper id='studies'>
         <Separator/>
@@ -47,17 +20,11 @@ function Studies() {
             <li className='studies-item'>
                 <div>
                     <h5 className='h-uni'>Universidad Nacional de Educación a Distancia (UNED)</h5>
-                    <span className='h-deg'>Phisical Science Degree | 2019 - Present</span>
+                    <span className='h-deg'>Phisics Degree | 2023 - Present</span>
                     <span className='h-esp'>Performing Part-Time</span>
                 </div>
             </li>
         </ol>
-        <div className='resume'>
-            <a href='#' onClick={obtainCV}>
-                <span>View Full Resumé</span>
-                <RightArrow />
-            </a>
-        </div>
     </StudiesWrapper>
   )
 }
@@ -87,43 +54,4 @@ const StudiesWrapper = styled.section`
             }
         }
     }
-    .resume{
-        margin-top: 3rem;
-        a{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: nowrap;
-            gap: .4rem;
-            span{
-                font-size: 1rem;
-                font-weight: bold;
-                transition: box-shadow 0.2s ease-in-out;
-            }
-            svg{
-                fill: white;
-                transition-duration: .17s;
-            }
-            &:hover{
-                span{
-                    box-shadow: 0px 1px 0px 0px rgba(66, 229, 180, 1);
-                }
-                svg{
-                    @keyframes arrow-moving{
-                        50% {margin-left: .9rem;}
-                        100$ {margin-left: 0;}
-                    }
-
-                    transform: translateX(9px);
-                    fill: rgb(66, 229, 180, 1);
-                    /*
-                    animation-name: arrow-moving;
-                    animation-duration: .85s;
-                    animation-iteration-count: infinite;
-                    */
-                }
-            }
-        }
-    }
-
 `

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import './css/App.css'
 import Header from './components/Header';
 import styled from 'styled-components';
@@ -7,21 +7,7 @@ function App() {
 
 const cursorRef = useRef(null);
 
-  function fetchData(){
-    fetch('https://portfolio-backend-4z0r.onrender.com/curriculum-vitae', 
-        {
-            method: "GET",
-            mode: "cors"
-        })
-        .then((response) => {
-            if (!response.ok)
-                throw new Error('Network response was not ok')
-            console.log("Made Request");
-        })
-  }
-
   useEffect(() => {
-    fetchData()
     const updateMousePosition = (mouseEvent) => {
       if (!cursorRef.current) return;
       const scrollX = window.scrollX || window.pageXOffset;
@@ -33,12 +19,10 @@ const cursorRef = useRef(null);
       cursorRef.current.style.setProperty('--x', `${clientX}px`);
       cursorRef.current.style.setProperty('--y', `${clientY}px`);
     }
-    const fetchDataInterval = setInterval(fetchData, 14 * 60 * 1000);
 
     window.addEventListener('mousemove', updateMousePosition)
     return () => {
       window.removeEventListener('mousemove', updateMousePosition)
-      clearInterval(fetchDataInterval);
     }
   }, [])
   const backStyles = {

@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import { GitHub, Linkedin, Youtube} from '../assets/Icons'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components';
@@ -7,13 +7,24 @@ function Header() {
 
     const links = ['ABOUT', 'EXPERIENCE', 'STUDIES', 'PROJECTS'];
 
-    const [activeLink, setActiveLink] = useState(0);
-    
-    
-    
-    const handleLinkClick = index => {
-        setActiveLink(index);       
-    };
+    const [activeSection, setActiveSection] = useState("about");
+
+    useEffect(()=>{
+        const observer = new IntersectionObserver(entries =>{
+            entries.forEach((entry) => {
+                if (entry.isIntersecting){
+                    setActiveSection(entry.target.id);
+                    console.log(activeSection);
+                }
+            })
+        }, {rootMargin: "-40% 0px -40% 0px"});
+        
+        const sections = document.querySelectorAll("section[id]");
+        
+        sections.forEach(section => observer.observe(section)); 
+        
+        return () => observer.disconnect();
+    }, [])
 
     const renderLinks = () => {
         return (
@@ -21,8 +32,8 @@ function Header() {
             {
                 links.map((link, index) => {
                     return (
-                        <li key={index} onClick={() => handleLinkClick(index)}>
-                            <a className={index === activeLink ? 'll-anchor ll-active' : 'll-anchor'} href={`#${link.toLowerCase()}`}>
+                        <li key={index}>
+                            <a className={link.toLowerCase() === activeSection ? 'll-anchor ll-active' : 'll-anchor'} href={`#${link.toLowerCase()}`}>
                                 <span className='ll-a__bar'></span>
                                 <span className='ll-a__name'>{link}</span>
                             </a>
@@ -37,11 +48,11 @@ function Header() {
         <HeaderWrapper>
             <div className='upper-header'>
                 <h1><Link to="#">Sergi Sanchez</Link></h1>
-                <h3>Computer Engineer</h3>
+                <h3>Artificial Intelligence Engineer</h3>
                 <p>
-                    This is my personal portfolio where you can check information 
-                    related to my resume, personal projects and get to know me 
-                    a little more!
+                    Computer Engineer and AI enthusiast, passionate about solving real-world
+                     problems through Machine Learning and Computer Vision. 
+                     Always learning, always building.
                 </p>
                 <nav>
                     {renderLinks()}

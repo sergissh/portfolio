@@ -5,27 +5,28 @@ function About() {
     <AboutWrapper id='about'>
       <h2 className='section-title'>About Me</h2>
       <p>
-        Ever since childhood, I always had the curiosity and desire to learn new things,
-        leading me to be fascinated by science and mathematics. Initially aspiring to pursue 
-        a degree in Physics at university, I encountered obstacles on that path. 
-        However, I quickly pivoted towards the field of Computer Engineering, discovering a 
-        captivating new world to explore.
+        Computer Engineer with professional experience developing AI 
+        and machine learning solutions for smart energy systems, 
+        contributing to research projects that resulted in a 
+        peer-reviewed publication and presentation at an international 
+        conference. I enjoy solving real-world problems through data, 
+        covering the complete machine learning workflow from data 
+        preprocessing and feature engineering to model development and
+         evaluation.
       </p>
       <p>
-        I found great enjoyment in programming, which led me to choose a specialization in computing.
-        Along this path, I uncovered field such as Artificial Intelligence and Computer Vision, 
-        these being the ones on which I aspire to concentrate my career and grow professionally.
+        My main interests are Artificial Intelligence, Machine Learning 
+        and Computer Vision. I'm passionate about continuously learning 
+        new technologies and applying them through both professional and 
+        personal projects, always looking to improve my skills as an 
+        engineer.
       </p>
       <p>
-        In addition to learning about Artificial Intelligence, I have keen interest in delving into another domains 
-        such as web development. This allows me to create visually and appealing content for a wider audience, much
-        like this portfolio you're currently viewing.
-      </p>
-      <p>
-          Along with my pursuit of learning and engaging in self-directed projects, I love to play
-          both individual and team sports. I also relish spending time with my girlfriend and friends,
-          and whenever the opportunity arises, to explore new countries and inmerse myself in diverse cultures
-          through travel. 
+        Outside of work, I'm currently studying Physics at UNED, 
+        a field that has always fascinated me and complements my 
+        background in Computer Engineering. I also enjoy travelling, 
+        practicing sports and building projects that allow me to keep 
+        exploring new ideas.
       </p>
     </AboutWrapper>
   )
