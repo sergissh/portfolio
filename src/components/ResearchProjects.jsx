@@ -86,7 +86,13 @@ function ProfessionalProjects() {
                             <span>•</span>
                             2025
                         </div>
+                        <ul className='links'>
+                            <li>
+                                <small>Paper Under Review</small> 
+                            </li>
+                        </ul>
                     </footer>
+
                 </div>
             </li>
             <li className='pr-item'>
