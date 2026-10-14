@@ -5,7 +5,13 @@ import styled from 'styled-components';
 
 function Header() {
     
-    const links = ['ABOUT', 'EXPERIENCE', 'STUDIES', 'PERSONAL PROJECTS'];
+    const links = [
+        { id: "about", label: "ABOUT" },
+        { id: "experience", label: "EXPERIENCE" },
+        { id: "studies", label: "STUDIES" },
+        { id: "research-projects", label: "RESEARCH PROJECTS" },
+        { id: "personal-projects", label: "PERSONAL PROJECTS" },
+    ];
 
     const [activeSection, setActiveSection] = useState("about");
 
@@ -25,24 +31,22 @@ function Header() {
         return () => observer.disconnect();
     }, [])
 
-    const renderLinks = () => {
-        return (
-            <ul>
-            {
-                links.map((link, index) => {
-                    return (
-                        <li key={index}>
-                            <a className={link.toLowerCase() === activeSection ? 'll-anchor ll-active' : 'll-anchor'} href={`#${link.toLowerCase()}`}>
-                                <span className='ll-a__bar'></span>
-                                <span className='ll-a__name'>{link}</span>
-                            </a>
-                        </li>
-                    )
-                })
-            }
-            </ul>
-        )
-    }
+    const renderLinks = () => (
+        <ul>
+            {links.map(({ id, label }) => (
+            <li key={id}>
+                <a
+                className={activeSection === id ? "ll-anchor ll-active" : "ll-anchor"}
+                href={`#${id}`}
+                >
+                <span className="ll-a__bar"></span>
+                <span className="ll-a__name">{label}</span>
+                </a>
+            </li>
+            ))}
+        </ul>
+    );
+
     return (
         <HeaderWrapper>
             <div className='upper-header'>

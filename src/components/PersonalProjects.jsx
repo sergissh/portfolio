@@ -7,7 +7,7 @@ import ganImage from '../assets/images/Generative-Adversarial-Networks.png';
 import scrapingImage from '../assets/images/web-scraping.jpg';
 function PersonalProjects() {
   return (
-    <WrapperList id='projects'>
+    <WrapperList id='personal-projects'>
         <Separator />
         <h2 className='section-title'>Personal Projects</h2>
         <ol className='pr-list'>

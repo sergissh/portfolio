@@ -6,10 +6,89 @@ import { GiMicrophone } from "react-icons/gi";
 import ganImage from '../assets/images/Generative-Adversarial-Networks.png'
 function ProfessionalProjects() {
   return (
-    <WrapperList id='projects'>
+    <WrapperList id='research-projects'>
         <Separator />
-        <h2 className='section-title'>Professional Projects</h2>
+        <h2 className='section-title'>Research Projects</h2>
         <ol className='pr-list'>
+            <li className='pr-item'>
+                <div className='pr-item__div'> 
+                    <header>
+                        <h3>Non-Intrusive Load Monitoring</h3>
+                        <span>Catalonian Research Project · IREC</span>
+                    </header>
+                    <div className='content'>
+                        <div className='image'>
+                            <img src={ganImage}/>
+                        </div>
+                        <div className='description'>
+                            <p>
+                                Designed and implemented a methodology to estimate and aggregate building flexibility for smart grid applications. 
+                                The objective was to quantify how much electrical demand could be shifted in time without compromising occupant comfort, 
+                                allowing distributed energy resources to participate in demand response services. The work involved data preprocessing, 
+                                machine learning model development, flexibility estimation and performance evaluation.
+                            </p>
+                            <ul className='tags'>
+                                <li>Python</li>
+                                <li>Tensorflow</li>
+                                <li>NILM</li>
+                                <li>Signal Processing</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <footer>
+                        <div className="metadata">
+                            AI Engineer
+                            <span>•</span>
+                            IREC
+                            <span>•</span>
+                            Catalonian Research Project
+                            <span>•</span>
+                            2026
+                        </div>
+                    </footer>
+                </div>
+            </li>
+            <li className='pr-item'>
+                <div className='pr-item__div'> 
+                    <header>
+                        <h3>Building Flexibility Aggregation Methodology</h3>
+                        <span>European Research Project · IREC</span>
+                    </header>
+                    <div className='content'>
+                        <div className='image'>
+                            <img src={ganImage}/>
+                        </div>
+                        <div className='description'>
+                            <p>
+                                Developed a methodology for estimating and aggregating building flexibility 
+                                to support demand response strategies in smart grids. Designed data processing 
+                                pipelines and machine learning models to characterize flexible energy resources 
+                                and evaluate their contribution to grid services.
+                            </p>
+                            <ul className='tags'>
+                                <li>Python</li>
+                                <li>Machine Learning</li>
+                                <li>Optimization Algorithms</li>
+                                <li>Energy Systems</li>
+                                <li>Demand Response</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <footer>
+                        <div className="metadata">
+                            AI Engineer
+                            <span>•</span>
+                            IREC
+                            <span>•</span>
+                            European Research Project
+                            <span>•</span>
+                            2025
+                        </div>
+                    </footer>
+                </div>
+            </li>
             <li className='pr-item'>
                 <div className='pr-item__div'> 
                     <header>
@@ -46,12 +125,12 @@ function ProfessionalProjects() {
                             <span>•</span>
                             European Research Project
                             <span>•</span>
-                            2024–2026
+                            2024–2025
                         </div>
                         <ul className='links'>
                             <li>
                                 <small>Published Paper</small> 
-                                <a href='www.google.com'>
+                                <a href='https://ieeexplore.ieee.org/document/11284179'>
                                     <BsFileEarmarkText />
                                     Short-Term Photovoltaic and Demand Forecasting Using Deep Learning • 2026
                                 </a>

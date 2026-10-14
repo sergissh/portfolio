@@ -4,7 +4,7 @@ import About from './About';
 import Experience from './Experience';
 import Studies from './Studies';
 import PersonalProjects from './PersonalProjects';
-import ProfessionalProjects from './ProfessionalProjects';
+import ProfessionalProjects from './ResearchProjects';
 
 function MainSection() {
   return (
