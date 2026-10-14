@@ -121,7 +121,7 @@ const ExperienceWrapper = styled.section`
             }
             p{
                 line-height: 1.6;
-                opacity: .75;
+                color:#94a3b8;
                 min-width: 100%;
             }
             ul{
@@ -134,7 +134,7 @@ const ExperienceWrapper = styled.section`
                     border-radius: 1rem;
                     padding: .4rem;
                     font-size: .9rem;
-                    background-color: rgb(32, 141, 108, .7);
+                    background-color: rgba(32,141,108,.45);
                     color: rgb(66, 229, 180, 1);
                 }
             }

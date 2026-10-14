@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import { GitHub, Linkedin, Youtube} from '../assets/Icons'
+import { GitHub, Linkedin} from '../assets/Icons'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 
 function Header() {
-
-    const links = ['ABOUT', 'EXPERIENCE', 'STUDIES', 'PROJECTS'];
+    
+    const links = ['ABOUT', 'EXPERIENCE', 'STUDIES', 'PERSONAL PROJECTS'];
 
     const [activeSection, setActiveSection] = useState("about");
 
@@ -14,7 +14,6 @@ function Header() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting){
                     setActiveSection(entry.target.id);
-                    console.log(activeSection);
                 }
             })
         }, {rootMargin: "-40% 0px -40% 0px"});
@@ -62,7 +61,6 @@ function Header() {
             <div className='lower-header'>
                 <a target='_blank' href='https://github.com/sergissh' rel="noreferrer" title='GitHub Repository'><GitHub /></a>
                 <a target='_blank' href="https://www.linkedin.com/in/sergi-s%C3%A1nchez-hern%C3%A1ndez/" rel="noreferrer" title='Linkedin Profile'><Linkedin /></a>
-                <a target='_blank' href="https://www.youtube.com/channel/UCkXcQbFiITYJ34QBX8M_mKw" rel="noreferrer" title='Youtube Profile'><Youtube /></a>
             </div>
         </HeaderWrapper>
     )
@@ -132,9 +130,8 @@ const HeaderWrapper = styled.header`
         }
     }
     @media(min-width: 1025px){
-        max-height: 100vh;
-        min-height: 100vh;
-        width: 50%;
+        flex: 0 0 380px;
+        height: 100vh;
         position: sticky;
         top: 0;
         padding: 6rem 0;

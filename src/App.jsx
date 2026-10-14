@@ -42,16 +42,19 @@ export default App;
 
 const MainWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 6rem;
+  max-width: 1650px;
+  margin 0 auto;
+  padding: 0 10rem;
+  gap: 5rem;
+  p{
+    color:#94a3b8;
+    line-height: 1.65;
+  }
   @media(max-width: 1025px){
-    display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 3rem;
+    gap: 3rem;
+    padding: 0 2rem;
   }
 `

@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import About from './About';
 import Experience from './Experience';
 import Studies from './Studies';
-import ProjectList from './ProjectList';
+import PersonalProjects from './PersonalProjects';
+import ProfessionalProjects from './ProfessionalProjects';
 
 function MainSection() {
   return (
@@ -11,7 +12,8 @@ function MainSection() {
         <About/>
         <Experience />
         <Studies />
-        <ProjectList />
+        <ProfessionalProjects />
+        <PersonalProjects />
     </SectionWrapper>
   )
 }
@@ -21,9 +23,10 @@ export default MainSection;
 const SectionWrapper = styled.main`
   margin-bottom: 5rem;
   @media(min-width: 1025px){
+    flex: 1;
     padding: 6rem 0;
     margin-bottom: 0;
-    width: 50%;
+    width: 55%;
     .section-title{
       display: none;
     }
